@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bellybutton Biodiversity</title>
+    <link 
+    rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
 
 <body>
 
@@ -21,7 +25,8 @@
     <div class="row">
       <div class="col-md-2">
         <div class="well">
-          <h5>Test Subject ID No.:</h5>
+          <h6>Test Subject ID No.:</h6>
+            <p style="text-align:justify">Select subject id number to see information according to that subject.</p>
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
@@ -34,14 +39,17 @@
       </div>
       <div class="col-md-5">
         <div id="bar"></div>
+        <p>Bar chart above shows the top 10 bacterial species withn the samples of each test subject.</p>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
+        <p>Gauge above shows the frequency in which the selected subject washes their bellybutton.</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <p>Bubble Chart above shows the different varieties of bacteria found in each sample of the Subject selected. </p>
       </div>
     </div>
   </div>
